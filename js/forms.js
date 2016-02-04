@@ -20,7 +20,9 @@
 			// Iterate through form elements and sent to pastebin
 			var data = '';
 			$('#myForm').children('input:not([type=submit]), textarea, select').each(function() {
-				data += $(this).attr('name') + ': ' + $(this).val() + "\n";
+				if(!($(this).attr('type').match(/checkbox|radio/) && !$(this).prop('checked'))) {
+					data += $(this).attr('name') + ': ' + $(this).val() + "\n";
+				}
 			});
 			return data;
 		}
