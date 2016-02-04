@@ -2,7 +2,7 @@
 
 In this project you will be creating a form.
 
-The <form> tag and one <input> tag are already
+The form tag and one input tag are already
 created for you. Add the following inputs:
 
 - Last Name text box
